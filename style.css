@@ -1,3 +1,5 @@
+/* MAIN PAGE LAYOUT */
+
 body {
     display: flex;
     margin: 0;
@@ -5,6 +7,11 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -22,7 +29,6 @@ body {
 .header > div {
     flex: 1 1 50%;
     padding: 10px;
-    /* height: 100px; */
 }
 
 /* NAVIGATION BAR */
@@ -36,8 +42,7 @@ body {
     display: flex;
     gap: 16px;
     font-size: 20px;
-    justify-content: right;
-    align-items: center;
+    justify-content: space-around;
 }
 
 ul {
@@ -48,7 +53,8 @@ ul {
 
 /* LINK BEHAVIORS */
 
-a { text-decoration: none;
+.nav-link { 
+    text-decoration: none;
     color: transparent;
     font-weight: 900;
     background-image: linear-gradient(
@@ -63,6 +69,7 @@ a { text-decoration: none;
     );
     background-clip: text;
 }
+
 a:visited { text-decoration: none; color: #f6e27a;}
 a:hover { text-decoration: none; color: black;}
 a:active { text-decoration: none; color: white;}
@@ -99,7 +106,7 @@ a:active { text-decoration: none; color: white;}
     background-clip: text;
   }
 
-  p {
+  .member-prompt {
     color: #cb9b51;
   }
 
@@ -115,3 +122,49 @@ a:active { text-decoration: none; color: white;}
     color: black;
     font-weight: bold;
   }
+
+  /* INFO SECTION */
+
+  .section2-title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .basic-info {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    height: 500px;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  .card1 {
+    color:black;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .card2 {
+    color:black;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .card3 {
+    color:black;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .card4 {
+    color:black;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  
